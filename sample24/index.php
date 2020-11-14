@@ -1,3 +1,7 @@
+<?php
+$value = '変数に保存した値';
+setcookie('save_message','Cookieに保存した値です',time()+60*60*24*14);
+?>
 <!doctype html>
 <html lang="ja">
 <head>
@@ -17,13 +21,11 @@
 
 <main>
 <h2>Practice</h2>
-<form action="../sample21.php" method="POST">
-    <p>郵便番号</p>
-    <p>
-        <input type="search" name="address" value="" maxlength="8">
-    </p>
-    <input type="submit" value="送信する">
-</form>
+<pre>
+
+<a href="page02.php">page02へ</a>
+
+</pre>
 </main>
 </body>    
 </html>

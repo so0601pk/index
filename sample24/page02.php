@@ -17,13 +17,12 @@
 
 <main>
 <h2>Practice</h2>
-<form action="../sample21.php" method="POST">
-    <p>郵便番号</p>
-    <p>
-        <input type="search" name="address" value="" maxlength="8">
-    </p>
-    <input type="submit" value="送信する">
-</form>
+<pre>
+
+変数の値：<?php print($value); ?>
+Cookieの値：<?php print($_COOKIE['save_message']); ?>
+
+</pre>
 </main>
 </body>    
 </html>

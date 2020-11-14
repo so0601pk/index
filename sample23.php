@@ -17,11 +17,22 @@
 
 <main>
 <h2>Practice</h2>
-<pre>
 
-お名前：<?php print(htmlspecialchars($_REQUEST['my_name'], ENT_QUOTES)); ?>さん、こんにちは
-
-</pre> 
+<table>
+    <?php
+    for ($i=1; $i<=10; $i++){
+        if( $i % 3 ==1){
+            print('<tr style="background-color: #ccc">');
+        }elseif($i%3 ==2){
+            print('<tr style="background-color: #ccf">');
+        }else{
+            print('<tr>');
+        }
+        print('<td>' . $i .'行目 </td>');
+        print('</tr>');   
+    }
+?>
+</table>
 </main>
 </body>    
 </html>
